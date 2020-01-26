@@ -22,3 +22,14 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 } */
+
+
+/* hero */
+
+
+.hero {
+  background-image: url("../public/assets/hero.jpg");
+
+  background-size: cover;
+  height: 500px;
+}

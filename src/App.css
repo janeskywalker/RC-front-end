@@ -4,11 +4,21 @@
 
 .hero {
   background-image: url("../public/assets/hero.jpg");
-
   background-size: cover;
   height: 500px;
+  animation-duration: 3s;
+  animation-name: fadein;
 }
 
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1
+  }
+}
 
 /* section-one */
 
@@ -51,12 +61,29 @@
   grid-template-columns: 1fr 1fr;  
 }
 
-.icon-dash-board{
+.icon-dash-board {
   padding: 50px;
   display: grid;
   align-items: center;
   grid-template-columns: 1fr 1fr;
   grid-row-gap: 50px;
+}
+
+.icon-content {
+  background-color: red;
+  width: 90px;
+  height: 90px;
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition-property: transform, background-color;
+  transition-duration: 1s;
+}
+
+.icon-content:hover {
+  background-color: black;
+  transform: scale(1.2) rotate(20deg);
 }
 
 .icon-img {
@@ -93,6 +120,40 @@
 
 
 /* carousel */
+
+.circle-container {
+  display: flex;
+}
+
+.circle {
+  width: 4px;
+  height: 4px;
+  border: rgb(236, 205, 146) solid 1px;
+  background: rgb(247, 187, 75); 
+  border-radius: 50%;
+  margin: 0 2px;
+}
+
+.circle.active {
+  background: red;
+}
+
+.body-content {
+  animation-duration: 1s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
 
 
 /* footer */

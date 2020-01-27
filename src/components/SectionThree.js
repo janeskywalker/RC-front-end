@@ -12,11 +12,13 @@ const SectionThree = () => {
         <p className="link"> > Lorem Ipsum</p>
       </div>
       <div className="icon-dash-board">
-        <img
-          className="icon-img"
-          src="/assets/home-expertise.svg"
-          alt="home-expertise"
-        />
+        <div className="icon-content">
+          <img
+            className="icon-img"
+            src="/assets/home-expertise.svg"
+            alt="home-expertise"
+          />
+        </div>
         <img
           className="icon-img"
           src="/assets/home-expertise.svg"

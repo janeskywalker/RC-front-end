@@ -53,7 +53,7 @@ const Carousel = () => {
         <div className="body-text-content">
           <p className='author-date'>{currentSlide.author} {currentSlide.date}</p>
           <p className="body-content">{currentSlide.body}</p>
-          <PageIndicator currentIndex={state.currentIndex} numOfSlides={numOfSlides}/>
+          <PageIndicator className="page-indicator" currentIndex={state.currentIndex} numOfSlides={numOfSlides}/>
         </div>
         {/* <button className='forward-btn'> */}
           <div className="forward-arrow" onClick={() => {

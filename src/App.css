@@ -70,9 +70,9 @@
 }
 
 .icon-content {
-  background-color: red;
-  width: 90px;
-  height: 90px;
+  border: rgb(156, 109, 156) solid 1px;
+  width: 70px;
+  height: 70px;
   box-sizing: border-box;
   padding: 10px;
   border-radius: 50%;
@@ -82,12 +82,12 @@
 }
 
 .icon-content:hover {
-  background-color: black;
+  background-color: rgb(156, 109, 156);
   transform: scale(1.2) rotate(20deg);
 }
 
 .icon-img {
-  width: 70px;
+  width: 50px;
 }
 
 
@@ -121,6 +121,10 @@
 
 /* carousel */
 
+.carousel {
+  height: 250px;
+}
+
 .body-container {
   display: grid;
   grid-template-columns: 1fr 8fr 3fr;
@@ -132,7 +136,8 @@
   width: 80%;
 }
 .author-date{
-  /* text-align: center; */
+  text-align: center;
+  color: purple
 }
 
 .body-content {
@@ -162,8 +167,14 @@
   border-left: none;
 }
 
+/* .page-indicator {
+  background: red
+} */
+
 .circle-container {
   display: flex;
+  padding-left: 100px;
+  
 }
 
 .circle {

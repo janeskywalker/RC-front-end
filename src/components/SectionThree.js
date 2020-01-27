@@ -19,21 +19,28 @@ const SectionThree = () => {
             alt="home-expertise"
           />
         </div>
-        <img
-          className="icon-img"
-          src="/assets/home-expertise.svg"
-          alt="home-expertise"
-        />
-        <img
-          className="icon-img"
-          src="/assets/home-expertise.svg"
-          alt="home-expertise"
-        />
-        <img
-          className="icon-img"
-          src="/assets/home-expertise.svg"
-          alt="home-expertise"
-        />
+        <div className="icon-content">
+          <img
+            className="icon-img"
+            src="/assets/home-hygiene.svg"
+            alt="home-expertise"
+          />
+        </div>
+        <div className="icon-content">
+          <img
+            className="icon-img"
+            src="/assets/home-lab.svg"
+            alt="home-expertise"
+          />
+        </div>
+        <div className="icon-content">
+          <img
+            className="icon-img"
+            src="/assets/home-retention.svg"
+            alt="home-expertise"
+          />
+        </div>
+        
       </div>
     </section>
   );

@@ -13,6 +13,6 @@ There is not much strggle with React, but making the carousel without bootstrap 
 However, figuring out that was also the fun part. Following the mockup and making it looks as closer to the mockup as possible is satisfying and quite enjoyable. And of course, making animation is always the best part. It feels like playing video games. 
 
 Areas to work on: 
-1. Font of the Greetings ("Welcome to Rooster Grin")
+1. Font of the Greetings ("Welcome to ...")
 2. The links
 3. use webpack to build 

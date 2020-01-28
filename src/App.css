@@ -14,6 +14,7 @@
   height: 500px;
   animation-duration: 3s;
   animation-name: fadein;
+
 }
 
 @keyframes fadein {
@@ -26,17 +27,31 @@
   }
 }
 
+.hero-wrapper {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.filling {
+  padding: 90px 0;
+} 
+
+
 .logo {
   width: 160px;
 }
 
 .greetings {
-  /* display: block; */
-  margin: 0 auto;
-  text-align: center;
-
-
+  color: whitesmoke;
+  /* width: 80%; */
 }
+
+.greetings-text-2{
+
+  padding-left: 20px;
+}
+
 /* section-one */
 
 .section-one {

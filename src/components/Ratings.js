@@ -8,7 +8,6 @@ const Ratings = ({ratings}) => {
 
   return (
     <div>
-      I am ratings
       {stars}
     </div>
     

@@ -9,7 +9,7 @@ const SectionFour = () => {
           Enim laborum ea aute magna dolor exercitation eu dolor dolore laboris.
           Nisi commodo proident qui reprehenderit adipisicing mollit.
         </p>
-        <button className="button">Button Button</button>
+        <button className="btn">Button Button</button>
       </div>
     </section>
   );

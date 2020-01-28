@@ -17,7 +17,7 @@ const Carousel = () => {
         ratings: 5,
         author: "John Smith",
         date: "01/01/20",
-        body: "Officia magna est in officia fugiat eiusmod pariatur amet. Exercitation incididunt proident est ipsum. Lorem deserunt cillum deserunt veniam. Exercitation tempor culpa excepteur officia. Officia officia culpa aute.."
+        body: "Officia magna est in officia fugiat eiusmod pariatur amet. Exercitation incididunt proident est ipsum. Lorem deserunt cillum deserunt veniam. Exercitation tempor. "
       },
       {
         title: "Title Three",
@@ -34,40 +34,43 @@ const Carousel = () => {
   const numOfSlides = state.slides.length
 
   return (
-    <section className='carousel'>
-      <div className="title-container">
-        <h2>{currentSlide.title}</h2>
-        <Rating ratings={currentSlide.ratings}/>
-      </div>
-      <div className="body-container">
-        {/* <button className='backward-btn' > */}
-        <div className="backward-arrow" onClick={() => {
-        if(state.currentIndex > 0){
-          setState({
-            ...state,
-            currentIndex: state.currentIndex - 1
-          })
-        }
-      }}></div>
-          {/* </button> */}
-        <div className="body-text-content">
-          <p className='author-date'>{currentSlide.author} {currentSlide.date}</p>
-          <p className="body-content">{currentSlide.body}</p>
-          <PageIndicator className="page-indicator" currentIndex={state.currentIndex} numOfSlides={numOfSlides}/>
+      <section className='carousel'>
+        <div className="title-container">
+          <h2>{currentSlide.title}</h2>
+          <Rating ratings={currentSlide.ratings}/>
         </div>
-        {/* <button className='forward-btn'> */}
-        <div className="forward-arrow" onClick={() => {
-        if(state.currentIndex < numOfSlides - 1) {
-          setState({
-            ...state,
-            currentIndex: state.currentIndex + 1
-          });
-        }
-      }}></div>
-          {/* </button> */}
-
-      </div>
-    </section>
+        <div className="body-container">
+          {/* <button className='backward-btn' > */}
+          <div className="styling-carousel-1">
+            <div className="styling-carousel-2">
+              <div className="backward-arrow" onClick={() => {
+              if(state.currentIndex > 0){
+                setState({
+                  ...state,
+                  currentIndex: state.currentIndex - 1
+                })
+              }
+            }}></div>
+                {/* </button> */}
+              <div className="body-text-content">
+                <p className='author-date'>{currentSlide.author} {currentSlide.date}</p>
+                <p className="body-content">{currentSlide.body}</p>
+                <PageIndicator className="page-indicator" currentIndex={state.currentIndex} numOfSlides={numOfSlides}/>
+              </div>
+              {/* <button className='forward-btn'> */}
+              <div className="forward-arrow" onClick={() => {
+              if(state.currentIndex < numOfSlides - 1) {
+                setState({
+                  ...state,
+                  currentIndex: state.currentIndex + 1
+                });
+              }
+            }}></div>
+            {/* </button> */}
+            </div>
+          </div>
+        </div>
+      </section>
   );
 };
 

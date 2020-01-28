@@ -29,6 +29,14 @@
 .logo {
   width: 160px;
 }
+
+.greetings {
+  /* display: block; */
+  margin: 0 auto;
+  text-align: center;
+
+
+}
 /* section-one */
 
 .section-one {
@@ -120,24 +128,28 @@
 
 /* section-five */
 .carousel {
-  /* padding: 40px 20px; */
   display: grid;
-  /* align-items: center; */
   grid-template-columns: 1fr 1.2fr;  
+  padding: 60px 0;
 }
 
-
-
-/* carousel */
-
-.carousel {
-  height: 250px;
+.styling-carousel-1 {
+  max-width: 400px;
+  padding: 0 30px;
+  position: relative;
 }
+
+.styling-carousel-2 {
+  display: grid;
+  justify-content: center;
+}
+
 
 .body-container {
   display: grid;
-  grid-template-columns: 1fr 8fr 3fr;
-  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 0 30px;
 }
 
 .body-text-content {
@@ -153,9 +165,7 @@
   animation-duration: 1s;
   animation-name: slidein;
   width: 100%;
-  /* text-align: left; */
-  /* padding-left: 60px; */
-
+  padding-bottom: 10px;
 }
 
 .backward-arrow {
@@ -165,6 +175,11 @@
   transform: scale(1.2) rotate(45deg);
   border-top: none;
   border-right: none;
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  cursor: pointer;
+
 }
 
 .forward-arrow {
@@ -174,11 +189,12 @@
   transform: scale(1.2) rotate(45deg);
   border-bottom: none;
   border-left: none;
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  cursor: pointer;
 }
 
-/* .page-indicator {
-  background: red
-} */
 
 .circle-container {
   display: flex;
@@ -187,8 +203,8 @@
 }
 
 .circle {
-  width: 4px;
-  height: 4px;
+  width: 5px;
+  height: 5px;
   border: rgb(236, 205, 146) solid 1px;
   background: rgb(247, 187, 75); 
   border-radius: 50%;
@@ -197,9 +213,13 @@
 
 .circle.active {
   background: red;
+  border: red solid 1px;
 }
 
-
+.title-container {
+  padding-left: 250px;
+  padding-top: 20px;
+}
 
 @keyframes slidein {
   from {

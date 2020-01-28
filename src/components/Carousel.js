@@ -17,7 +17,7 @@ const Carousel = () => {
         ratings: 5,
         author: "John Smith",
         date: "01/01/20",
-        body: "Officia magna est in officia fugiat eiusmod pariatur amet. Exercitation incididunt proident est ipsum. Lorem deserunt cillum deserunt veniam. Exercitation tempor. "
+        body: "Officia magna est in officia fugiat eiusmod pariatur amet. Exercitation incididunt proident est ipsum. Lorem deserunt cillum deserunt veniam. Exercitation tempor. Lorem deserunt cillum deserunt veniam. "
       },
       {
         title: "Title Three",

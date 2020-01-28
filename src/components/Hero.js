@@ -3,7 +3,7 @@ import React from "react";
 const Hero = () => {
   return (
     <header className="hero">
-      <div className="logo-contrainer">
+      <div className="logo-container">
           <img
             className="logo"
             src="/assets/logo-white.svg"
@@ -16,7 +16,7 @@ const Hero = () => {
         <div className='greetings'>
           <h1 className="greetings-text">WELCOME TO</h1>
           <h1 className="greetings-text-2">Rooster Grin</h1>
-          <button className="btn hero-">Button Button</button>
+          <button className="btn hero-btn">Button Button</button>
         </div>
         <div className='filling'></div>
       </div>

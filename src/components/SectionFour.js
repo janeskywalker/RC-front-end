@@ -3,6 +3,7 @@ import React from "react";
 const SectionFour = () => {
   return (
     <section className="section-four">
+      <div className='filling2'></div>
       <div className="text-wrapper-section-four">
         <h2 className="text-title">LOREM IPSUM</h2>
         <p className="text-content">

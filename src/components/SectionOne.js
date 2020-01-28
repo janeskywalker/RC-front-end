@@ -11,7 +11,7 @@ const SectionOne = () => {
           aute excepteur ea ut elit non quis esse mollit sit nisi eiusmod
           consectetur eu.
         </p>
-        <p> > Lorem Ipsum</p>
+        <p className="link"> > Lorem Ipsum</p>
       </div>
       <div className="image-content">
         <img className="img-1" src="/assets/img-1.jpg" alt="give me a hand" />

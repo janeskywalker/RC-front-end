@@ -41,14 +41,14 @@ const Carousel = () => {
       </div>
       <div className="body-container">
         {/* <button className='backward-btn' > */}
-            <div className="backward-arrow" onClick={() => {
-            if(state.currentIndex > 0){
-              setState({
-                ...state,
-                currentIndex: state.currentIndex - 1
-              })
-            }
-          }}></div>
+        <div className="backward-arrow" onClick={() => {
+        if(state.currentIndex > 0){
+          setState({
+            ...state,
+            currentIndex: state.currentIndex - 1
+          })
+        }
+      }}></div>
           {/* </button> */}
         <div className="body-text-content">
           <p className='author-date'>{currentSlide.author} {currentSlide.date}</p>
@@ -56,14 +56,14 @@ const Carousel = () => {
           <PageIndicator className="page-indicator" currentIndex={state.currentIndex} numOfSlides={numOfSlides}/>
         </div>
         {/* <button className='forward-btn'> */}
-          <div className="forward-arrow" onClick={() => {
-          if(state.currentIndex < numOfSlides - 1) {
-            setState({
-              ...state,
-              currentIndex: state.currentIndex + 1
-            });
-          }
-        }}></div>
+        <div className="forward-arrow" onClick={() => {
+        if(state.currentIndex < numOfSlides - 1) {
+          setState({
+            ...state,
+            currentIndex: state.currentIndex + 1
+          });
+        }
+      }}></div>
           {/* </button> */}
 
       </div>

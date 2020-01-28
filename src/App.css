@@ -28,7 +28,7 @@
   background-image: url("../public/assets/hero.jpg");
   background-size: cover;
   height: 500px;
-  animation-duration: 3s;
+  animation-duration: 4s;
   animation-name: fadein;
 
 }
@@ -313,4 +313,79 @@
 .footer-img {
   width: 28px;
   margin: 0 5px;
+}
+
+
+
+
+
+/* responsive */
+
+
+
+@media screen and (max-width: 800px) {
+
+/* section 1 */
+
+  .text-wrapper {
+    padding: 50px 50px;
+  }
+
+  .image-content{
+    display: none;
+  } 
+
+  .section-one {
+    display: block;
+  }
+
+
+
+/* section-3 */
+
+  .section-three{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr;  
+  }
+
+  .icon-dash-board{
+    padding-left: 100px;
+  }
+  
+
+/* section-4 */
+
+.section-four {
+  background-image: url("../public/assets/banner-2.jpg");
+  background-size: cover;
+  height: 400px;
+  display: block;
+}
+
+
+.text-wrapper-section-four {
+  max-width: 70%;
+  padding: 10px;
+  /* position: relative;
+  left: 550px;
+  top: 100px; */
+}
+
+
+
+/* carousel */
+  .carousel {
+    display: grid;
+    grid-template-columns: 1fr;  
+    padding: 60px 0;
+  }
+
+  .title-container {
+    padding-left: 100px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+
+
 }
